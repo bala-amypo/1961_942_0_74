@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 @Table(name= "students")
 public class Studententity{
     @id
-    @GenerativeValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
