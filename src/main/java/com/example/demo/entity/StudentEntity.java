@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
+@Table(name= "students")
 public class Studententity{
     @id
     @GenerativeValue(strategy=GenerationType.IDENTITY)
