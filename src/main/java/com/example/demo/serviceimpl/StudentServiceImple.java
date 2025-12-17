@@ -13,7 +13,7 @@ public class StudentServiceImple implements StudentService{
     }
 
     public Student saveStudent(Student student){
-        return
+        return studentRepository.save(student);
     }
 }
 
