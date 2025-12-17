@@ -4,9 +4,9 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name= "students")
+// @Table(name= "students")
 public class Studententity{
-    @id
+    @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
