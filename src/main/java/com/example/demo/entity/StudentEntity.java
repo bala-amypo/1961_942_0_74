@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 // @Table(name= "students")
-public class Studententity{
+public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
@@ -37,13 +37,13 @@ public class Studententity{
     public void setCgpa(){
         this.cgpa=cgpa;
     }
-    public Stuentity(Long id,String name,String email,float cgpa){
+    public StudentEntity(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
     }
-    public Stuentity(){
+    public StudentEntity(){
         
     }
 }
