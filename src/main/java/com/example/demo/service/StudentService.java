@@ -1,10 +1,13 @@
 package com.example.demo.service;
 
-import org.springframework.stereotype.Service;
-
 import com.example.demo.entity.StuEnt;
+import java.util.List;
+import java.util.Optional;
 
-@Service
 public interface StudentService {
     StuEnt saveStudent(StuEnt student);
+    List<StuEnt> getAll(); 
+    Optional<StuEnt> getid(Long id);
+    StuEnt updateByid(Long id, StuEnt st);
+    String delete();
 }
