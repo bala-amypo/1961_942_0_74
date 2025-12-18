@@ -22,7 +22,8 @@ public class StudentServiceImplement implements StudentService{
     public StuEnt saveStudent(StuEnt student){
         return studentRepository.save(student);
     }
-    public List<StuEnt>getAll(){
+    @Override
+    public List<StuEnt> getAll(){
         return studentRepository.findAll();
     }
     @Override
@@ -38,5 +39,6 @@ public class StudentServiceImplement implements StudentService{
          studentRepository.deleteAll();
          return "Deleted Successfully...!";
     }
+
 }
 

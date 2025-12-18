@@ -26,7 +26,7 @@ public class StudentController {
     public List<StuEnt> getData(){
         return studentService.getAll();
     }
-    @GetMapping("/get{id}")
+    @GetMapping("/get/{id}")
     public Optional<StuEnt>getById(@PathVariable Long id){
         return studentService.getid(id);
     }
@@ -40,14 +40,5 @@ public class StudentController {
     public String delete(){
         return studentService.delete();
     }
-    @GetMapping("/get")
-    public List<StuEnt> getData(){
-        // FIX: Use the variable 'studentService', not the Class name
-        return studentService.getAll(); 
-    }
 
-    @GetMapping("/get/{id}") // FIX: added / between get and {id}
-    public Optional<StuEnt> getById(@PathVariable Long id){
-        return studentService.getid(id);
-    }
 }
