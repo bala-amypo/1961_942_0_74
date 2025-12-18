@@ -1,9 +1,9 @@
-package com.example.PracticeProject.controller;
+package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.PracticeProject.entity.StuEnt;
-import com.example.PracticeProject.service.StudentService;
+import com.example.demo.entity.StuEnt;
+import com.example.demo.service.StudentService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
